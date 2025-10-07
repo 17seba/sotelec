@@ -1,0 +1,30 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido 1 </th>
+      <th scope="col">Apellido 2</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each usuarios}}
+    <tr>
+      <th scope="row">{{this.usuario_id}}</th>
+      <td>{{this.nombre}}</td>
+      <td>{{this.apellido1}}</td>
+      <td>{{this.apellido2}}</td>
+      <td>{{this.email}}</td>
+    </tr>
+     {{/each}}
+  </tbody>
+</table>
+
+
+
+<ul class="people_list">
+
+    <li>{{this.nombre}}</li>
+
+</ul>
